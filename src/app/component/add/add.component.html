@@ -1,0 +1,16 @@
+<p>Add Students!</p>
+
+<form [formGroup]="addUser" (ngSubmit)="formSubmitted()">
+  
+  <div class="mb-3">
+    <label class="form-label">Name</label>
+    <input type="text" class="form-control" formControlName="name">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Email Address</label>
+    <input type="email" class="form-control" formControlName="email">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
